@@ -1,0 +1,119 @@
+ul, ol, li {
+    list-style: none;
+  }
+
+  .banner {
+    width: 1227px;
+    height: 460px;
+    border: 1px solid #333;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    /* z-index: -1; */
+  }
+  .banner > .imgBox li img{
+      width: 1227px;
+      height: 460px;
+  }
+  .banner > .imgBox {
+    width: 400%;
+    height: 100%;
+    /* 为了让 li 横向排列 */
+    display: flex;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .banner > .imgBox > li {
+    flex: 1;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner > .pointBox {
+    width: 200px;
+    height: 30px;
+    /* background-color: rgba(0, 0, 0, .5); */
+    position: absolute;
+    left: 1150px;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .banner > .pointBox > li {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .banner > .pointBox > li.active {
+    background-color: #fff;
+  }
+
+  .banner > .leftRight {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 240px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .banner > .leftRight > div:nth-child(2){
+    margin-left: 900px;
+  }
+  .banner > .leftRight > div {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, .5); */
+    font-size: 30px;
+    color: #818d96;
+    cursor: pointer;
+   
+}
+/* 轮播图结束 */
+
+/* 透明背景 菜单部分 */
+.banner .menu{
+  width: 234px;
+  height: 460px;
+  background-color: #333;
+  opacity: 0.8;
+}
+.menu .yi-ji{
+   padding-top: 22px;
+}
+.menu .yi-ji li{
+  width: 234px;
+  font-size: 15px;
+  color: #fff;
+  /* padding-left: 30px; */
+  line-height: 42px;
+
+}
+.menu .yi-ji li:hover{
+  background-color: #ff5400;
+}
+.menu .yi-ji li span{
+  float: right;
+  margin-right: 10px;
+}
+.menu .yi-ji li a{
+  font-size: 15px;
+  color: #fff;
+  padding-left: 30px;
+}

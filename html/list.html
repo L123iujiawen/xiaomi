@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/pagination.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+  <div class="header container">网站列表页</div>
+
+  <div class="info filterinfo container">
+    <div class="panel panel-success">
+      <div class="panel-heading">筛选信息</div>
+      <div class="panel-body">
+        <ul>
+          <li class="cat_one">
+            <div class="left">一级分类</div>
+            <div class="right">
+              <span class="active">大家电</span>
+              <span>nihao</span>
+              <span>nihao</span>
+              <span>nihao</span>
+              <span>nihao</span>
+            </div>
+          </li>
+          <li class="cat_two">
+            <div class="left">二级分类</div>
+            <div class="right">
+              <span class="active">全部</span>
+            </div>
+          </li>
+          <li class="cat_three">
+            <div class="left">三级分类</div>
+            <div class="right">
+              <span class="active">全部</span>
+            </div>
+          </li>
+          <li class="sort_list">
+            <div class="left">排序方式</div>
+            <div class="right">
+              <span data-sort="id" class="active">综合</span>
+              <span data-sort="price">价格</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="info pagiInfo container">
+    <div class="panel panel-warning">
+      <div class="panel-heading">分页信息</div>
+      <div class="panel-body pagination">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="goodsList container">
+    <ul class="">
+      <!-- js 渲染 -->
+    </ul>
+  </div>
+
+  <!-- <div class="footer container">网站底部</div> -->
+
+
+  <script src="../node_modules/jQuery/tmp/jquery.js"></script>
+  <script src="../js/pagination.js"></script>
+  <script src="../js/list.js"></script>
+</body>
+</html>
